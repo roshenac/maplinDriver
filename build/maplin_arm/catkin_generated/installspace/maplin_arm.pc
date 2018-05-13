@@ -1,0 +1,8 @@
+prefix=/home/roshenac/Desktop/makeitmove/install
+
+Name: maplin_arm
+Description: Description of maplin_arm
+Version: 0.0.0
+Cflags: -I/home/roshenac/Desktop/makeitmove/install/include
+Libs: -L/home/roshenac/Desktop/makeitmove/install/lib 
+Requires: roscpp rospy std_msgs message_runtime

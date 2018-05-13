@@ -1,0 +1,2 @@
+maplin_arm
+-DCATKIN_DEVEL_PREFIX=/home/roshenac/Desktop/makeitmove/devel -DCMAKE_INSTALL_PREFIX=/home/roshenac/Desktop/makeitmove/install -G Unix Makefiles

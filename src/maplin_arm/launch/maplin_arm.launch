@@ -1,0 +1,8 @@
+<launch>
+
+  
+  <!-- Maplin Arm Server -->
+  <node required="true" name="maplin_arm_server" pkg="maplin_arm" type="ROS_ArmServer.py" respawn="false" launch-prefix="sudo -E PYTHONPATH=$(env PYTHONPATH)" output="screen">
+  </node>
+
+</launch>
