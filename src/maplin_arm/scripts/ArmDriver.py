@@ -71,15 +71,11 @@ class ArmDriver():
         
         self.motorTimeouts = [ self.DEFAULT_MOTOR_TIMEOUT for i in range( self.NUM_MOTORS ) ]
         self.motorStates = [ MotorStates.OFF for i in range( self.NUM_MOTORS ) ]
-        rospy.loginfo("Resetting motor start times")
         self.motorStartTimes = [ 0.0 for i in range( self.NUM_MOTORS ) ]
         self.lastUpdateTime = 0.0
-        self.command = "stop"
         self.startTime = rospy.get_rostime().to_sec()
         
         # Connect to the arm
-        #self.armDevice = self.findUSBDevice( 
-        #    idVendor=self.ARM_ID_VENDOR, idProduct=self.ARM_ID_PRODUCT)
         self.rctl = usb.core.find(idVendor=self.ARM_ID_VENDOR, idProduct=self.ARM_ID_PRODUCT)
 
         if self.rctl == None:
@@ -87,57 +83,26 @@ class ArmDriver():
       
         self.rctl.reset()
 
-        #self.armDeviceHandle = self.armDevice.open()
-        #self.armDeviceHandle.setConfiguration( self.armDevice.configurations[ self.CONFIG_IDX ] )
-        #self.armDeviceHandle.claimInterface( self.INTERFACE_IDX )
-        #self.armDeviceHandle.setAltInterface( self.INTERFACE_IDX )
-
-    #---------------------------------------------------------------------------
-    def __del__( self ):
-        
-        self.armDeviceHandle.releaseInterface()
-        del self.armDeviceHandle
-
-    #---------------------------------------------------------------------------
-    def findUSBDevice( self, idVendor, idProduct ):
-    
-        for bus in usb.busses():
-            for dev in bus.devices:
-                if dev.idVendor == idVendor and dev.idProduct == idProduct:
-                    return dev
-                
-        return None
         
     #---------------------------------------------------------------------------
     def setMotorTimeout( self, motorIdx, timeout ):
-        rospy.loginfo("set motor time out")
-        rospy.loginfo(motorIdx)
-        rospy.loginfo(timeout)
         self.motorTimeouts[ motorIdx ] = timeout
         
     #---------------------------------------------------------------------------
     def setMotorState( self, motorIdx, state ):
         if state in self.VALID_MOTOR_STATES:
-            rospy.loginfo("Setting motor state")
             self.motorStates[ motorIdx ] = state
             self.motorStartTimes[ motorIdx ] = rospy.get_rostime().to_sec()
-            rospy.sleep(2.)
 
     #---------------------------------------------------------------------------
     def update( self ):
-        rospy.loginfo("trying to update arm")
 
         curTime = rospy.get_rostime().to_sec()
-        rospy.loginfo(curTime)
-        rospy.loginfo(self.lastUpdateTime)
         if curTime - self.lastUpdateTime > 1.0/self.MAX_UPDATE_RATE:
-            rospy.loginfo("Try to move moters") 
-
             # Turn off motors which have run for too long without another command
             for motorIdx in range( self.NUM_MOTORS ):
                 if self.motorStates[ motorIdx ] != MotorStates.OFF \
                     and curTime - self.motorStartTimes[ motorIdx ] >= self.motorTimeouts[ motorIdx ] and motorIdx != maplin_arm.msg.MotorState.LIGHT :
-                    rospy.loginfo("Setting motor state to off")
                     self.motorStates[ motorIdx ] = MotorStates.OFF
            
 
@@ -146,7 +111,6 @@ class ArmDriver():
 
 	    self.move_array = [dataBuffer ,self.motorStates[maplin_arm.msg.MotorState.BASE], bool(self.motorStates[ maplin_arm.msg.MotorState.LIGHT ])]
  
-            rospy.loginfo(self.move_array)
             self.rctl.ctrl_transfer(0x40,6,0x100,0,self.move_array,1000)
 
             # Store the update time

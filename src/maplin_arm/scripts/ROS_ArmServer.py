@@ -20,12 +20,6 @@ class ArmServer():
       # run simultaneously.
       rospy.init_node( 'listener', anonymous=True )
       self.armDriver = ArmDriver()
-      self.armDriver.setMotorTimeout(MotorState.GRIPPER,2)
-      self.armDriver.setMotorTimeout(MotorState.WRIST,2)
-      self.armDriver.setMotorTimeout(MotorState.ELBOW,3)
-      self.armDriver.setMotorTimeout(MotorState.SHOULDER,3)
-      self.armDriver.setMotorTimeout(MotorState.BASE,2)
-      self.armDriver.setMotorTimeout(MotorState.LIGHT,4)
 
       rospy.Subscriber('setArmMotorStates', SetMotorStates, self.setArmMotorStatesCallback)
 
@@ -37,14 +31,12 @@ class ArmServer():
 
     #---------------------------------------------------------------------------
   def update( self ):
-      rospy.loginfo("Updating driver")
       self.armDriver.update()
             
     #---------------------------------------------------------------------------
   def setArmMotorStatesCallback(self ,request ):  
       for stateRequest in request.motorStates:
           if stateRequest.motorIdx >= 0 and stateRequest.motorIdx < ArmDriver.NUM_MOTORS:
-              rospy.loginfo("heard topic")
               self.armDriver.setMotorState( stateRequest.motorIdx, stateRequest.motorState )
               self.update() 
           else:
