@@ -12,10 +12,10 @@ from maplin_arm.msg import *
 class updateArm():
 
     def callback(self, data):
-        # dataBuffer = ((self.motorStates[MotorState.GRIPPER] & 0x3) << 6) | ((self.motorStates[MotorState.WRIST] & 0x3) << 4) | (
-        #         (self.motorStates[MotorState.ELBOW] & 0x3) << 2) | (self.motorStates[MotorState.SHOULDER] & 0x3)
+        dataBuffer = ((data.gripper & 0x3) << 6) | ((data.wrist & 0x3) << 4) | (
+                 (data.elbow & 0x3) << 2) | (data.shoulder & 0x3)
 
-        move_array = [0, data.base,data.light]
+        move_array = [dataBuffer, data.base,data.light]
 
         self.rctl.ctrl_transfer(0x40, 6, 0x100, 0, move_array, 1000)
 
@@ -27,7 +27,7 @@ class updateArm():
 
 
     def listener(self):
-        rospy.init_node('listener', anonymous=True)
+        rospy.init_node('movejoint', anonymous=True)
 
         ARM_ID_VENDOR = 0x1267
         ARM_ID_PRODUCT = 0x0000
