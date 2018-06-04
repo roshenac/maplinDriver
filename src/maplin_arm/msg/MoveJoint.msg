@@ -4,4 +4,4 @@ int32 elbow
 int32 shoulder
 int32 wrist
 bool light
-int32 timer
+float64 timer

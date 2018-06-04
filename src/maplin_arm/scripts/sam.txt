@@ -1,0 +1,5 @@
+base:0.0
+shoulder:0.0
+elbow:0.0
+wrist:0.0
+gripper:0.24
