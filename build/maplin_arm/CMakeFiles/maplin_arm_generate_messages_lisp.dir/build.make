@@ -55,6 +55,7 @@ include maplin_arm/CMakeFiles/maplin_arm_generate_messages_lisp.dir/progress.mak
 
 maplin_arm/CMakeFiles/maplin_arm_generate_messages_lisp: /home/roshenac/Desktop/makeitmove/devel/share/common-lisp/ros/maplin_arm/msg/MotorState.lisp
 maplin_arm/CMakeFiles/maplin_arm_generate_messages_lisp: /home/roshenac/Desktop/makeitmove/devel/share/common-lisp/ros/maplin_arm/msg/SetMotorStates.lisp
+maplin_arm/CMakeFiles/maplin_arm_generate_messages_lisp: /home/roshenac/Desktop/makeitmove/devel/share/common-lisp/ros/maplin_arm/msg/MoveJoint.lisp
 
 
 /home/roshenac/Desktop/makeitmove/devel/share/common-lisp/ros/maplin_arm/msg/MotorState.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
@@ -69,9 +70,15 @@ maplin_arm/CMakeFiles/maplin_arm_generate_messages_lisp: /home/roshenac/Desktop/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roshenac/Desktop/makeitmove/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from maplin_arm/SetMotorStates.msg"
 	cd /home/roshenac/Desktop/makeitmove/build/maplin_arm && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/SetMotorStates.msg -Imaplin_arm:/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p maplin_arm -o /home/roshenac/Desktop/makeitmove/devel/share/common-lisp/ros/maplin_arm/msg
 
+/home/roshenac/Desktop/makeitmove/devel/share/common-lisp/ros/maplin_arm/msg/MoveJoint.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
+/home/roshenac/Desktop/makeitmove/devel/share/common-lisp/ros/maplin_arm/msg/MoveJoint.lisp: /home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MoveJoint.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roshenac/Desktop/makeitmove/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Lisp code from maplin_arm/MoveJoint.msg"
+	cd /home/roshenac/Desktop/makeitmove/build/maplin_arm && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MoveJoint.msg -Imaplin_arm:/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p maplin_arm -o /home/roshenac/Desktop/makeitmove/devel/share/common-lisp/ros/maplin_arm/msg
+
 maplin_arm_generate_messages_lisp: maplin_arm/CMakeFiles/maplin_arm_generate_messages_lisp
 maplin_arm_generate_messages_lisp: /home/roshenac/Desktop/makeitmove/devel/share/common-lisp/ros/maplin_arm/msg/MotorState.lisp
 maplin_arm_generate_messages_lisp: /home/roshenac/Desktop/makeitmove/devel/share/common-lisp/ros/maplin_arm/msg/SetMotorStates.lisp
+maplin_arm_generate_messages_lisp: /home/roshenac/Desktop/makeitmove/devel/share/common-lisp/ros/maplin_arm/msg/MoveJoint.lisp
 maplin_arm_generate_messages_lisp: maplin_arm/CMakeFiles/maplin_arm_generate_messages_lisp.dir/build.make
 
 .PHONY : maplin_arm_generate_messages_lisp

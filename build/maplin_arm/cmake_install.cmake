@@ -36,6 +36,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/maplin_arm/msg" TYPE FILE FILES
     "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MotorState.msg"
     "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/SetMotorStates.msg"
+    "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MoveJoint.msg"
     )
 endif()
 

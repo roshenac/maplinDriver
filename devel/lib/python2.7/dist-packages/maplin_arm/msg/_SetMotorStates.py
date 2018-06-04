@@ -9,12 +9,11 @@ import maplin_arm.msg
 import std_msgs.msg
 
 class SetMotorStates(genpy.Message):
-  _md5sum = "d69a444bd7c491a9948f3ea063d83389"
+  _md5sum = "864ca5c0ba29cb9c1cc3795632561514"
   _type = "maplin_arm/SetMotorStates"
   _has_header = True #flag to mark the presence of a Header object
   _full_text = """Header header
 MotorState[] motorStates
-string command
 
 
 ================================================================================
@@ -51,8 +50,8 @@ int32 UP=2
 int32 motorIdx
 int32 motorState
 """
-  __slots__ = ['header','motorStates','command']
-  _slot_types = ['std_msgs/Header','maplin_arm/MotorState[]','string']
+  __slots__ = ['header','motorStates']
+  _slot_types = ['std_msgs/Header','maplin_arm/MotorState[]']
 
   def __init__(self, *args, **kwds):
     """
@@ -62,7 +61,7 @@ int32 motorState
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       header,motorStates,command
+       header,motorStates
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -75,12 +74,9 @@ int32 motorState
         self.header = std_msgs.msg.Header()
       if self.motorStates is None:
         self.motorStates = []
-      if self.command is None:
-        self.command = ''
     else:
       self.header = std_msgs.msg.Header()
       self.motorStates = []
-      self.command = ''
 
   def _get_types(self):
     """
@@ -107,12 +103,6 @@ int32 motorState
       for val1 in self.motorStates:
         _x = val1
         buff.write(_get_struct_2i().pack(_x.motorIdx, _x.motorState))
-      _x = self.command
-      length = len(_x)
-      if python3 or type(_x) == unicode:
-        _x = _x.encode('utf-8')
-        length = len(_x)
-      buff.write(struct.pack('<I%ss'%length, length, _x))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -151,15 +141,6 @@ int32 motorState
         end += 8
         (_x.motorIdx, _x.motorState,) = _get_struct_2i().unpack(str[start:end])
         self.motorStates.append(val1)
-      start = end
-      end += 4
-      (length,) = _struct_I.unpack(str[start:end])
-      start = end
-      end += length
-      if python3:
-        self.command = str[start:end].decode('utf-8')
-      else:
-        self.command = str[start:end]
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -185,12 +166,6 @@ int32 motorState
       for val1 in self.motorStates:
         _x = val1
         buff.write(_get_struct_2i().pack(_x.motorIdx, _x.motorState))
-      _x = self.command
-      length = len(_x)
-      if python3 or type(_x) == unicode:
-        _x = _x.encode('utf-8')
-        length = len(_x)
-      buff.write(struct.pack('<I%ss'%length, length, _x))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -230,15 +205,6 @@ int32 motorState
         end += 8
         (_x.motorIdx, _x.motorState,) = _get_struct_2i().unpack(str[start:end])
         self.motorStates.append(val1)
-      start = end
-      end += 4
-      (length,) = _struct_I.unpack(str[start:end])
-      start = end
-      end += length
-      if python3:
-        self.command = str[start:end].decode('utf-8')
-      else:
-        self.command = str[start:end]
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill

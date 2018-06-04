@@ -55,6 +55,7 @@ include maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/progress.m
 
 maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs: /home/roshenac/Desktop/makeitmove/devel/share/gennodejs/ros/maplin_arm/msg/MotorState.js
 maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs: /home/roshenac/Desktop/makeitmove/devel/share/gennodejs/ros/maplin_arm/msg/SetMotorStates.js
+maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs: /home/roshenac/Desktop/makeitmove/devel/share/gennodejs/ros/maplin_arm/msg/MoveJoint.js
 
 
 /home/roshenac/Desktop/makeitmove/devel/share/gennodejs/ros/maplin_arm/msg/MotorState.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
@@ -69,9 +70,15 @@ maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs: /home/roshenac/Deskto
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roshenac/Desktop/makeitmove/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from maplin_arm/SetMotorStates.msg"
 	cd /home/roshenac/Desktop/makeitmove/build/maplin_arm && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/SetMotorStates.msg -Imaplin_arm:/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p maplin_arm -o /home/roshenac/Desktop/makeitmove/devel/share/gennodejs/ros/maplin_arm/msg
 
+/home/roshenac/Desktop/makeitmove/devel/share/gennodejs/ros/maplin_arm/msg/MoveJoint.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/roshenac/Desktop/makeitmove/devel/share/gennodejs/ros/maplin_arm/msg/MoveJoint.js: /home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MoveJoint.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roshenac/Desktop/makeitmove/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from maplin_arm/MoveJoint.msg"
+	cd /home/roshenac/Desktop/makeitmove/build/maplin_arm && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MoveJoint.msg -Imaplin_arm:/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p maplin_arm -o /home/roshenac/Desktop/makeitmove/devel/share/gennodejs/ros/maplin_arm/msg
+
 maplin_arm_generate_messages_nodejs: maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs
 maplin_arm_generate_messages_nodejs: /home/roshenac/Desktop/makeitmove/devel/share/gennodejs/ros/maplin_arm/msg/MotorState.js
 maplin_arm_generate_messages_nodejs: /home/roshenac/Desktop/makeitmove/devel/share/gennodejs/ros/maplin_arm/msg/SetMotorStates.js
+maplin_arm_generate_messages_nodejs: /home/roshenac/Desktop/makeitmove/devel/share/gennodejs/ros/maplin_arm/msg/MoveJoint.js
 maplin_arm_generate_messages_nodejs: maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/build.make
 
 .PHONY : maplin_arm_generate_messages_nodejs

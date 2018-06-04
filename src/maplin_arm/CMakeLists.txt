@@ -52,6 +52,7 @@ find_package(catkin REQUIRED COMPONENTS
    FILES
    MotorState.msg
    SetMotorStates.msg
+   MoveJoint.msg
  )
 
 ## Generate services in the 'srv' folder

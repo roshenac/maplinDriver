@@ -322,6 +322,32 @@ maplin_arm_generate_messages_lisp/fast:
 .PHONY : maplin_arm_generate_messages_lisp/fast
 
 #=============================================================================
+# Target rules for targets named maplin_arm_generate_messages_nodejs
+
+# Build rule for target.
+maplin_arm_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 maplin_arm_generate_messages_nodejs
+.PHONY : maplin_arm_generate_messages_nodejs
+
+# fast build rule for target.
+maplin_arm_generate_messages_nodejs/fast:
+	$(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/build.make maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/build
+.PHONY : maplin_arm_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named maplin_arm_geneus
+
+# Build rule for target.
+maplin_arm_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 maplin_arm_geneus
+.PHONY : maplin_arm_geneus
+
+# fast build rule for target.
+maplin_arm_geneus/fast:
+	$(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_geneus.dir/build.make maplin_arm/CMakeFiles/maplin_arm_geneus.dir/build
+.PHONY : maplin_arm_geneus/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_py
 
 # Build rule for target.
@@ -556,32 +582,6 @@ std_msgs_generate_messages_eus/fast:
 .PHONY : std_msgs_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named maplin_arm_generate_messages_nodejs
-
-# Build rule for target.
-maplin_arm_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 maplin_arm_generate_messages_nodejs
-.PHONY : maplin_arm_generate_messages_nodejs
-
-# fast build rule for target.
-maplin_arm_generate_messages_nodejs/fast:
-	$(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/build.make maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/build
-.PHONY : maplin_arm_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named maplin_arm_geneus
-
-# Build rule for target.
-maplin_arm_geneus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 maplin_arm_geneus
-.PHONY : maplin_arm_geneus
-
-# fast build rule for target.
-maplin_arm_geneus/fast:
-	$(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_geneus.dir/build.make maplin_arm/CMakeFiles/maplin_arm_geneus.dir/build
-.PHONY : maplin_arm_geneus/fast
-
-#=============================================================================
 # Target rules for targets named std_msgs_generate_messages_lisp
 
 # Build rule for target.
@@ -606,6 +606,19 @@ _maplin_arm_generate_messages_check_deps_MotorState: cmake_check_build_system
 _maplin_arm_generate_messages_check_deps_MotorState/fast:
 	$(MAKE) -f maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MotorState.dir/build.make maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MotorState.dir/build
 .PHONY : _maplin_arm_generate_messages_check_deps_MotorState/fast
+
+#=============================================================================
+# Target rules for targets named _maplin_arm_generate_messages_check_deps_MoveJoint
+
+# Build rule for target.
+_maplin_arm_generate_messages_check_deps_MoveJoint: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _maplin_arm_generate_messages_check_deps_MoveJoint
+.PHONY : _maplin_arm_generate_messages_check_deps_MoveJoint
+
+# fast build rule for target.
+_maplin_arm_generate_messages_check_deps_MoveJoint/fast:
+	$(MAKE) -f maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir/build.make maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir/build
+.PHONY : _maplin_arm_generate_messages_check_deps_MoveJoint/fast
 
 #=============================================================================
 # Target rules for targets named maplin_arm_gencpp
@@ -671,6 +684,8 @@ help:
 	@echo "... maplin_arm_genpy"
 	@echo "... maplin_arm_gennodejs"
 	@echo "... maplin_arm_generate_messages_lisp"
+	@echo "... maplin_arm_generate_messages_nodejs"
+	@echo "... maplin_arm_geneus"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... maplin_arm_generate_messages_py"
 	@echo "... maplin_arm_genlisp"
@@ -689,10 +704,9 @@ help:
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_eus"
-	@echo "... maplin_arm_generate_messages_nodejs"
-	@echo "... maplin_arm_geneus"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... _maplin_arm_generate_messages_check_deps_MotorState"
+	@echo "... _maplin_arm_generate_messages_check_deps_MoveJoint"
 	@echo "... maplin_arm_gencpp"
 	@echo "... maplin_arm_generate_messages_cpp"
 	@echo "... maplin_arm_generate_messages_eus"

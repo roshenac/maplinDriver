@@ -210,6 +210,12 @@ GTEST_MAIN_LIBRARY:FILEPATH=GTEST_MAIN_LIBRARY-NOTFOUND
 //Path to a library.
 GTEST_MAIN_LIBRARY_DEBUG:FILEPATH=GTEST_MAIN_LIBRARY_DEBUG-NOTFOUND
 
+//Path to a file.
+LIBUSB_INCLUDEDIR:PATH=/usr/include/libusb-1.0
+
+//Path to a library.
+LIBUSB_LIBRARIES:FILEPATH=/usr/lib/x86_64-linux-gnu/libusb-1.0.so
+
 //lsb_release executable was found
 LSB_FOUND:BOOL=TRUE
 
@@ -321,6 +327,9 @@ gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
 //Path to a library.
 lib:FILEPATH=/opt/ros/kinetic/lib/libxmlrpcpp.so
+
+//The directory containing a CMake configuration file for libusb.
+libusb_DIR:PATH=libusb_DIR-NOTFOUND
 
 //Value Computed by CMake
 maplin_arm_BINARY_DIR:STATIC=/home/roshenac/Desktop/makeitmove/build/maplin_arm

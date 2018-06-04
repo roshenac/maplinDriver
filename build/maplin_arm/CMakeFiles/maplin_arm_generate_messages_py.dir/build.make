@@ -55,6 +55,7 @@ include maplin_arm/CMakeFiles/maplin_arm_generate_messages_py.dir/progress.make
 
 maplin_arm/CMakeFiles/maplin_arm_generate_messages_py: /home/roshenac/Desktop/makeitmove/devel/lib/python2.7/dist-packages/maplin_arm/msg/_MotorState.py
 maplin_arm/CMakeFiles/maplin_arm_generate_messages_py: /home/roshenac/Desktop/makeitmove/devel/lib/python2.7/dist-packages/maplin_arm/msg/_SetMotorStates.py
+maplin_arm/CMakeFiles/maplin_arm_generate_messages_py: /home/roshenac/Desktop/makeitmove/devel/lib/python2.7/dist-packages/maplin_arm/msg/_MoveJoint.py
 maplin_arm/CMakeFiles/maplin_arm_generate_messages_py: /home/roshenac/Desktop/makeitmove/devel/lib/python2.7/dist-packages/maplin_arm/msg/__init__.py
 
 
@@ -70,15 +71,22 @@ maplin_arm/CMakeFiles/maplin_arm_generate_messages_py: /home/roshenac/Desktop/ma
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roshenac/Desktop/makeitmove/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG maplin_arm/SetMotorStates"
 	cd /home/roshenac/Desktop/makeitmove/build/maplin_arm && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/SetMotorStates.msg -Imaplin_arm:/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p maplin_arm -o /home/roshenac/Desktop/makeitmove/devel/lib/python2.7/dist-packages/maplin_arm/msg
 
+/home/roshenac/Desktop/makeitmove/devel/lib/python2.7/dist-packages/maplin_arm/msg/_MoveJoint.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/roshenac/Desktop/makeitmove/devel/lib/python2.7/dist-packages/maplin_arm/msg/_MoveJoint.py: /home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MoveJoint.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roshenac/Desktop/makeitmove/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG maplin_arm/MoveJoint"
+	cd /home/roshenac/Desktop/makeitmove/build/maplin_arm && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MoveJoint.msg -Imaplin_arm:/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p maplin_arm -o /home/roshenac/Desktop/makeitmove/devel/lib/python2.7/dist-packages/maplin_arm/msg
+
 /home/roshenac/Desktop/makeitmove/devel/lib/python2.7/dist-packages/maplin_arm/msg/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
 /home/roshenac/Desktop/makeitmove/devel/lib/python2.7/dist-packages/maplin_arm/msg/__init__.py: /home/roshenac/Desktop/makeitmove/devel/lib/python2.7/dist-packages/maplin_arm/msg/_MotorState.py
 /home/roshenac/Desktop/makeitmove/devel/lib/python2.7/dist-packages/maplin_arm/msg/__init__.py: /home/roshenac/Desktop/makeitmove/devel/lib/python2.7/dist-packages/maplin_arm/msg/_SetMotorStates.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roshenac/Desktop/makeitmove/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python msg __init__.py for maplin_arm"
+/home/roshenac/Desktop/makeitmove/devel/lib/python2.7/dist-packages/maplin_arm/msg/__init__.py: /home/roshenac/Desktop/makeitmove/devel/lib/python2.7/dist-packages/maplin_arm/msg/_MoveJoint.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roshenac/Desktop/makeitmove/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python msg __init__.py for maplin_arm"
 	cd /home/roshenac/Desktop/makeitmove/build/maplin_arm && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/roshenac/Desktop/makeitmove/devel/lib/python2.7/dist-packages/maplin_arm/msg --initpy
 
 maplin_arm_generate_messages_py: maplin_arm/CMakeFiles/maplin_arm_generate_messages_py
 maplin_arm_generate_messages_py: /home/roshenac/Desktop/makeitmove/devel/lib/python2.7/dist-packages/maplin_arm/msg/_MotorState.py
 maplin_arm_generate_messages_py: /home/roshenac/Desktop/makeitmove/devel/lib/python2.7/dist-packages/maplin_arm/msg/_SetMotorStates.py
+maplin_arm_generate_messages_py: /home/roshenac/Desktop/makeitmove/devel/lib/python2.7/dist-packages/maplin_arm/msg/_MoveJoint.py
 maplin_arm_generate_messages_py: /home/roshenac/Desktop/makeitmove/devel/lib/python2.7/dist-packages/maplin_arm/msg/__init__.py
 maplin_arm_generate_messages_py: maplin_arm/CMakeFiles/maplin_arm_generate_messages_py.dir/build.make
 

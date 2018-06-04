@@ -1,18 +1,24 @@
 # Hashes of file build rules.
 86f6160d0367021f9431ca586d6f3c00 /home/roshenac/Desktop/makeitmove/devel/include/maplin_arm/MotorState.h
+1f3a5839a70650be2318af637810d099 /home/roshenac/Desktop/makeitmove/devel/include/maplin_arm/MoveJoint.h
 9d1d9628c27562e336c01d2dc9dd799b /home/roshenac/Desktop/makeitmove/devel/include/maplin_arm/SetMotorStates.h
 994d9160f2b139c1dc9ec3209b139c87 /home/roshenac/Desktop/makeitmove/devel/lib/python2.7/dist-packages/maplin_arm/msg/_MotorState.py
+f8d01dfb917eeca82f088ac27fe4bf9d /home/roshenac/Desktop/makeitmove/devel/lib/python2.7/dist-packages/maplin_arm/msg/_MoveJoint.py
 f63965f6d0e662b889e5add2da55e24e /home/roshenac/Desktop/makeitmove/devel/lib/python2.7/dist-packages/maplin_arm/msg/_SetMotorStates.py
 fef3967ae87cebd0e0470c3e1914da55 /home/roshenac/Desktop/makeitmove/devel/lib/python2.7/dist-packages/maplin_arm/msg/__init__.py
 47d4760c261480797a8ee8524ff623b2 /home/roshenac/Desktop/makeitmove/devel/share/common-lisp/ros/maplin_arm/msg/MotorState.lisp
+71e4d4d04b597740d05f23ad69bf29ca /home/roshenac/Desktop/makeitmove/devel/share/common-lisp/ros/maplin_arm/msg/MoveJoint.lisp
 abccc79e77c9c31258dbeee46f0bd630 /home/roshenac/Desktop/makeitmove/devel/share/common-lisp/ros/maplin_arm/msg/SetMotorStates.lisp
 d26e3485b0cfb0d5bd3e76d80f81bf17 /home/roshenac/Desktop/makeitmove/devel/share/gennodejs/ros/maplin_arm/msg/MotorState.js
+02ce944f4d0df553dbdc3839f611aec5 /home/roshenac/Desktop/makeitmove/devel/share/gennodejs/ros/maplin_arm/msg/MoveJoint.js
 56c479e95f39954d9f176ba236df5f71 /home/roshenac/Desktop/makeitmove/devel/share/gennodejs/ros/maplin_arm/msg/SetMotorStates.js
 fb6c39f58dcbac332086a23a18cab888 /home/roshenac/Desktop/makeitmove/devel/share/roseus/ros/maplin_arm/manifest.l
 f0fd14bbc6b7c43416234a4c7ba45cd0 /home/roshenac/Desktop/makeitmove/devel/share/roseus/ros/maplin_arm/msg/MotorState.l
+46d9132e5f77bc62d3f3e81e414445dc /home/roshenac/Desktop/makeitmove/devel/share/roseus/ros/maplin_arm/msg/MoveJoint.l
 96893e35c9933aab80020cfba30269b1 /home/roshenac/Desktop/makeitmove/devel/share/roseus/ros/maplin_arm/msg/SetMotorStates.l
 f6a4db5c39a80562d0aed34b66d556c6 CMakeFiles/clean_test_results
 38e6456ae1363cbac125665d943759f6 maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MotorState
+7ad951d3a5654aa266cad0680e230db3 maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint
 72b0c3598b78b241d967205139d615f2 maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_SetMotorStates
 4de5a6a0ce8bd939d3630f16ddef828f maplin_arm/CMakeFiles/maplin_arm_generate_messages_cpp
 4de5a6a0ce8bd939d3630f16ddef828f maplin_arm/CMakeFiles/maplin_arm_generate_messages_eus

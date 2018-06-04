@@ -22,7 +22,6 @@ class SetMotorStates {
       // initObj === null is a special case for deserialization where we don't initialize fields
       this.header = null;
       this.motorStates = null;
-      this.command = null;
     }
     else {
       if (initObj.hasOwnProperty('header')) {
@@ -37,12 +36,6 @@ class SetMotorStates {
       else {
         this.motorStates = [];
       }
-      if (initObj.hasOwnProperty('command')) {
-        this.command = initObj.command
-      }
-      else {
-        this.command = '';
-      }
     }
   }
 
@@ -56,8 +49,6 @@ class SetMotorStates {
     obj.motorStates.forEach((val) => {
       bufferOffset = MotorState.serialize(val, buffer, bufferOffset);
     });
-    // Serialize message field [command]
-    bufferOffset = _serializer.string(obj.command, buffer, bufferOffset);
     return bufferOffset;
   }
 
@@ -74,8 +65,6 @@ class SetMotorStates {
     for (let i = 0; i < len; ++i) {
       data.motorStates[i] = MotorState.deserialize(buffer, bufferOffset)
     }
-    // Deserialize message field [command]
-    data.command = _deserializer.string(buffer, bufferOffset);
     return data;
   }
 
@@ -83,8 +72,7 @@ class SetMotorStates {
     let length = 0;
     length += std_msgs.msg.Header.getMessageSize(object.header);
     length += 8 * object.motorStates.length;
-    length += object.command.length;
-    return length + 8;
+    return length + 4;
   }
 
   static datatype() {
@@ -94,7 +82,7 @@ class SetMotorStates {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return 'd69a444bd7c491a9948f3ea063d83389';
+    return '864ca5c0ba29cb9c1cc3795632561514';
   }
 
   static messageDefinition() {
@@ -102,7 +90,6 @@ class SetMotorStates {
     return `
     Header header
     MotorState[] motorStates
-    string command
     
     
     ================================================================================
@@ -163,13 +150,6 @@ class SetMotorStates {
     }
     else {
       resolved.motorStates = []
-    }
-
-    if (msg.command !== undefined) {
-      resolved.command = msg.command;
-    }
-    else {
-      resolved.command = ''
     }
 
     return resolved;

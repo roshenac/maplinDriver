@@ -78,17 +78,6 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -132,6 +121,17 @@ install/strip: preinstall
 install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -209,6 +209,36 @@ maplin_arm_generate_messages_lisp: maplin_arm/CMakeFiles/maplin_arm_generate_mes
 maplin_arm_generate_messages_lisp/fast:
 	cd /home/roshenac/Desktop/makeitmove/build && $(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_generate_messages_lisp.dir/build.make maplin_arm/CMakeFiles/maplin_arm_generate_messages_lisp.dir/build
 .PHONY : maplin_arm_generate_messages_lisp/fast
+
+# Convenience name for target.
+maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/rule:
+	cd /home/roshenac/Desktop/makeitmove/build && $(MAKE) -f CMakeFiles/Makefile2 maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/rule
+.PHONY : maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+maplin_arm_generate_messages_nodejs: maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/rule
+
+.PHONY : maplin_arm_generate_messages_nodejs
+
+# fast build rule for target.
+maplin_arm_generate_messages_nodejs/fast:
+	cd /home/roshenac/Desktop/makeitmove/build && $(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/build.make maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/build
+.PHONY : maplin_arm_generate_messages_nodejs/fast
+
+# Convenience name for target.
+maplin_arm/CMakeFiles/maplin_arm_geneus.dir/rule:
+	cd /home/roshenac/Desktop/makeitmove/build && $(MAKE) -f CMakeFiles/Makefile2 maplin_arm/CMakeFiles/maplin_arm_geneus.dir/rule
+.PHONY : maplin_arm/CMakeFiles/maplin_arm_geneus.dir/rule
+
+# Convenience name for target.
+maplin_arm_geneus: maplin_arm/CMakeFiles/maplin_arm_geneus.dir/rule
+
+.PHONY : maplin_arm_geneus
+
+# fast build rule for target.
+maplin_arm_geneus/fast:
+	cd /home/roshenac/Desktop/makeitmove/build && $(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_geneus.dir/build.make maplin_arm/CMakeFiles/maplin_arm_geneus.dir/build
+.PHONY : maplin_arm_geneus/fast
 
 # Convenience name for target.
 maplin_arm/CMakeFiles/roscpp_generate_messages_py.dir/rule:
@@ -481,36 +511,6 @@ std_msgs_generate_messages_eus/fast:
 .PHONY : std_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/rule:
-	cd /home/roshenac/Desktop/makeitmove/build && $(MAKE) -f CMakeFiles/Makefile2 maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/rule
-.PHONY : maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-maplin_arm_generate_messages_nodejs: maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/rule
-
-.PHONY : maplin_arm_generate_messages_nodejs
-
-# fast build rule for target.
-maplin_arm_generate_messages_nodejs/fast:
-	cd /home/roshenac/Desktop/makeitmove/build && $(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/build.make maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/build
-.PHONY : maplin_arm_generate_messages_nodejs/fast
-
-# Convenience name for target.
-maplin_arm/CMakeFiles/maplin_arm_geneus.dir/rule:
-	cd /home/roshenac/Desktop/makeitmove/build && $(MAKE) -f CMakeFiles/Makefile2 maplin_arm/CMakeFiles/maplin_arm_geneus.dir/rule
-.PHONY : maplin_arm/CMakeFiles/maplin_arm_geneus.dir/rule
-
-# Convenience name for target.
-maplin_arm_geneus: maplin_arm/CMakeFiles/maplin_arm_geneus.dir/rule
-
-.PHONY : maplin_arm_geneus
-
-# fast build rule for target.
-maplin_arm_geneus/fast:
-	cd /home/roshenac/Desktop/makeitmove/build && $(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_geneus.dir/build.make maplin_arm/CMakeFiles/maplin_arm_geneus.dir/build
-.PHONY : maplin_arm_geneus/fast
-
-# Convenience name for target.
 maplin_arm/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
 	cd /home/roshenac/Desktop/makeitmove/build && $(MAKE) -f CMakeFiles/Makefile2 maplin_arm/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 .PHONY : maplin_arm/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
@@ -539,6 +539,21 @@ _maplin_arm_generate_messages_check_deps_MotorState: maplin_arm/CMakeFiles/_mapl
 _maplin_arm_generate_messages_check_deps_MotorState/fast:
 	cd /home/roshenac/Desktop/makeitmove/build && $(MAKE) -f maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MotorState.dir/build.make maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MotorState.dir/build
 .PHONY : _maplin_arm_generate_messages_check_deps_MotorState/fast
+
+# Convenience name for target.
+maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir/rule:
+	cd /home/roshenac/Desktop/makeitmove/build && $(MAKE) -f CMakeFiles/Makefile2 maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir/rule
+.PHONY : maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir/rule
+
+# Convenience name for target.
+_maplin_arm_generate_messages_check_deps_MoveJoint: maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir/rule
+
+.PHONY : _maplin_arm_generate_messages_check_deps_MoveJoint
+
+# fast build rule for target.
+_maplin_arm_generate_messages_check_deps_MoveJoint/fast:
+	cd /home/roshenac/Desktop/makeitmove/build && $(MAKE) -f maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir/build.make maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir/build
+.PHONY : _maplin_arm_generate_messages_check_deps_MoveJoint/fast
 
 # Convenience name for target.
 maplin_arm/CMakeFiles/maplin_arm_gencpp.dir/rule:
@@ -593,7 +608,6 @@ help:
 	@echo "... depend"
 	@echo "... list_install_components"
 	@echo "... install"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... install/local"
@@ -601,6 +615,8 @@ help:
 	@echo "... maplin_arm_genpy"
 	@echo "... maplin_arm_gennodejs"
 	@echo "... maplin_arm_generate_messages_lisp"
+	@echo "... maplin_arm_generate_messages_nodejs"
+	@echo "... maplin_arm_geneus"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... maplin_arm_generate_messages_py"
 	@echo "... maplin_arm_genlisp"
@@ -619,10 +635,10 @@ help:
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_eus"
-	@echo "... maplin_arm_generate_messages_nodejs"
-	@echo "... maplin_arm_geneus"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... _maplin_arm_generate_messages_check_deps_MotorState"
+	@echo "... rebuild_cache"
+	@echo "... _maplin_arm_generate_messages_check_deps_MoveJoint"
 	@echo "... maplin_arm_gencpp"
 	@echo "... maplin_arm_generate_messages_cpp"
 	@echo "... maplin_arm_generate_messages_eus"

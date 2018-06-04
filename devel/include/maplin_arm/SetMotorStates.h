@@ -27,13 +27,11 @@ struct SetMotorStates_
 
   SetMotorStates_()
     : header()
-    , motorStates()
-    , command()  {
+    , motorStates()  {
     }
   SetMotorStates_(const ContainerAllocator& _alloc)
     : header(_alloc)
-    , motorStates(_alloc)
-    , command(_alloc)  {
+    , motorStates(_alloc)  {
   (void)_alloc;
     }
 
@@ -44,9 +42,6 @@ struct SetMotorStates_
 
    typedef std::vector< ::maplin_arm::MotorState_<ContainerAllocator> , typename ContainerAllocator::template rebind< ::maplin_arm::MotorState_<ContainerAllocator> >::other >  _motorStates_type;
   _motorStates_type motorStates;
-
-   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _command_type;
-  _command_type command;
 
 
 
@@ -126,12 +121,12 @@ struct MD5Sum< ::maplin_arm::SetMotorStates_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "d69a444bd7c491a9948f3ea063d83389";
+    return "864ca5c0ba29cb9c1cc3795632561514";
   }
 
   static const char* value(const ::maplin_arm::SetMotorStates_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xd69a444bd7c491a9ULL;
-  static const uint64_t static_value2 = 0x948f3ea063d83389ULL;
+  static const uint64_t static_value1 = 0x864ca5c0ba29cb9cULL;
+  static const uint64_t static_value2 = 0x1cc3795632561514ULL;
 };
 
 template<class ContainerAllocator>
@@ -152,7 +147,6 @@ struct Definition< ::maplin_arm::SetMotorStates_<ContainerAllocator> >
   {
     return "Header header\n\
 MotorState[] motorStates\n\
-string command\n\
 \n\
 \n\
 ================================================================================\n\
@@ -208,7 +202,6 @@ namespace serialization
     {
       stream.next(m.header);
       stream.next(m.motorStates);
-      stream.next(m.command);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -238,8 +231,6 @@ struct Printer< ::maplin_arm::SetMotorStates_<ContainerAllocator> >
       s << indent;
       Printer< ::maplin_arm::MotorState_<ContainerAllocator> >::stream(s, indent + "    ", v.motorStates[i]);
     }
-    s << indent << "command: ";
-    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.command);
   }
 };
 

@@ -55,6 +55,7 @@ include maplin_arm/CMakeFiles/maplin_arm_generate_messages_cpp.dir/progress.make
 
 maplin_arm/CMakeFiles/maplin_arm_generate_messages_cpp: /home/roshenac/Desktop/makeitmove/devel/include/maplin_arm/MotorState.h
 maplin_arm/CMakeFiles/maplin_arm_generate_messages_cpp: /home/roshenac/Desktop/makeitmove/devel/include/maplin_arm/SetMotorStates.h
+maplin_arm/CMakeFiles/maplin_arm_generate_messages_cpp: /home/roshenac/Desktop/makeitmove/devel/include/maplin_arm/MoveJoint.h
 
 
 /home/roshenac/Desktop/makeitmove/devel/include/maplin_arm/MotorState.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
@@ -71,9 +72,16 @@ maplin_arm/CMakeFiles/maplin_arm_generate_messages_cpp: /home/roshenac/Desktop/m
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roshenac/Desktop/makeitmove/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from maplin_arm/SetMotorStates.msg"
 	cd /home/roshenac/Desktop/makeitmove/src/maplin_arm && /home/roshenac/Desktop/makeitmove/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/SetMotorStates.msg -Imaplin_arm:/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p maplin_arm -o /home/roshenac/Desktop/makeitmove/devel/include/maplin_arm -e /opt/ros/kinetic/share/gencpp/cmake/..
 
+/home/roshenac/Desktop/makeitmove/devel/include/maplin_arm/MoveJoint.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/roshenac/Desktop/makeitmove/devel/include/maplin_arm/MoveJoint.h: /home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MoveJoint.msg
+/home/roshenac/Desktop/makeitmove/devel/include/maplin_arm/MoveJoint.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roshenac/Desktop/makeitmove/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from maplin_arm/MoveJoint.msg"
+	cd /home/roshenac/Desktop/makeitmove/src/maplin_arm && /home/roshenac/Desktop/makeitmove/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MoveJoint.msg -Imaplin_arm:/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p maplin_arm -o /home/roshenac/Desktop/makeitmove/devel/include/maplin_arm -e /opt/ros/kinetic/share/gencpp/cmake/..
+
 maplin_arm_generate_messages_cpp: maplin_arm/CMakeFiles/maplin_arm_generate_messages_cpp
 maplin_arm_generate_messages_cpp: /home/roshenac/Desktop/makeitmove/devel/include/maplin_arm/MotorState.h
 maplin_arm_generate_messages_cpp: /home/roshenac/Desktop/makeitmove/devel/include/maplin_arm/SetMotorStates.h
+maplin_arm_generate_messages_cpp: /home/roshenac/Desktop/makeitmove/devel/include/maplin_arm/MoveJoint.h
 maplin_arm_generate_messages_cpp: maplin_arm/CMakeFiles/maplin_arm_generate_messages_cpp.dir/build.make
 
 .PHONY : maplin_arm_generate_messages_cpp

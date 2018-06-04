@@ -55,6 +55,7 @@ include maplin_arm/CMakeFiles/maplin_arm_generate_messages_eus.dir/progress.make
 
 maplin_arm/CMakeFiles/maplin_arm_generate_messages_eus: /home/roshenac/Desktop/makeitmove/devel/share/roseus/ros/maplin_arm/msg/MotorState.l
 maplin_arm/CMakeFiles/maplin_arm_generate_messages_eus: /home/roshenac/Desktop/makeitmove/devel/share/roseus/ros/maplin_arm/msg/SetMotorStates.l
+maplin_arm/CMakeFiles/maplin_arm_generate_messages_eus: /home/roshenac/Desktop/makeitmove/devel/share/roseus/ros/maplin_arm/msg/MoveJoint.l
 maplin_arm/CMakeFiles/maplin_arm_generate_messages_eus: /home/roshenac/Desktop/makeitmove/devel/share/roseus/ros/maplin_arm/manifest.l
 
 
@@ -70,13 +71,19 @@ maplin_arm/CMakeFiles/maplin_arm_generate_messages_eus: /home/roshenac/Desktop/m
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roshenac/Desktop/makeitmove/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from maplin_arm/SetMotorStates.msg"
 	cd /home/roshenac/Desktop/makeitmove/build/maplin_arm && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/SetMotorStates.msg -Imaplin_arm:/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p maplin_arm -o /home/roshenac/Desktop/makeitmove/devel/share/roseus/ros/maplin_arm/msg
 
+/home/roshenac/Desktop/makeitmove/devel/share/roseus/ros/maplin_arm/msg/MoveJoint.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/roshenac/Desktop/makeitmove/devel/share/roseus/ros/maplin_arm/msg/MoveJoint.l: /home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MoveJoint.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roshenac/Desktop/makeitmove/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from maplin_arm/MoveJoint.msg"
+	cd /home/roshenac/Desktop/makeitmove/build/maplin_arm && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MoveJoint.msg -Imaplin_arm:/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p maplin_arm -o /home/roshenac/Desktop/makeitmove/devel/share/roseus/ros/maplin_arm/msg
+
 /home/roshenac/Desktop/makeitmove/devel/share/roseus/ros/maplin_arm/manifest.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roshenac/Desktop/makeitmove/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp manifest code for maplin_arm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/roshenac/Desktop/makeitmove/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp manifest code for maplin_arm"
 	cd /home/roshenac/Desktop/makeitmove/build/maplin_arm && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/roshenac/Desktop/makeitmove/devel/share/roseus/ros/maplin_arm maplin_arm std_msgs
 
 maplin_arm_generate_messages_eus: maplin_arm/CMakeFiles/maplin_arm_generate_messages_eus
 maplin_arm_generate_messages_eus: /home/roshenac/Desktop/makeitmove/devel/share/roseus/ros/maplin_arm/msg/MotorState.l
 maplin_arm_generate_messages_eus: /home/roshenac/Desktop/makeitmove/devel/share/roseus/ros/maplin_arm/msg/SetMotorStates.l
+maplin_arm_generate_messages_eus: /home/roshenac/Desktop/makeitmove/devel/share/roseus/ros/maplin_arm/msg/MoveJoint.l
 maplin_arm_generate_messages_eus: /home/roshenac/Desktop/makeitmove/devel/share/roseus/ros/maplin_arm/manifest.l
 maplin_arm_generate_messages_eus: maplin_arm/CMakeFiles/maplin_arm_generate_messages_eus.dir/build.make
 

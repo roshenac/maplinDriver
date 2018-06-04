@@ -398,6 +398,8 @@ maplin_arm/all: maplin_arm/CMakeFiles/maplin_arm_generate_messages.dir/all
 maplin_arm/clean: maplin_arm/CMakeFiles/maplin_arm_genpy.dir/clean
 maplin_arm/clean: maplin_arm/CMakeFiles/maplin_arm_gennodejs.dir/clean
 maplin_arm/clean: maplin_arm/CMakeFiles/maplin_arm_generate_messages_lisp.dir/clean
+maplin_arm/clean: maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/clean
+maplin_arm/clean: maplin_arm/CMakeFiles/maplin_arm_geneus.dir/clean
 maplin_arm/clean: maplin_arm/CMakeFiles/roscpp_generate_messages_py.dir/clean
 maplin_arm/clean: maplin_arm/CMakeFiles/maplin_arm_generate_messages_py.dir/clean
 maplin_arm/clean: maplin_arm/CMakeFiles/maplin_arm_genlisp.dir/clean
@@ -416,10 +418,9 @@ maplin_arm/clean: maplin_arm/CMakeFiles/roscpp_generate_messages_nodejs.dir/clea
 maplin_arm/clean: maplin_arm/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 maplin_arm/clean: maplin_arm/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 maplin_arm/clean: maplin_arm/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
-maplin_arm/clean: maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/clean
-maplin_arm/clean: maplin_arm/CMakeFiles/maplin_arm_geneus.dir/clean
 maplin_arm/clean: maplin_arm/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 maplin_arm/clean: maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MotorState.dir/clean
+maplin_arm/clean: maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir/clean
 maplin_arm/clean: maplin_arm/CMakeFiles/maplin_arm_gencpp.dir/clean
 maplin_arm/clean: maplin_arm/CMakeFiles/maplin_arm_generate_messages_cpp.dir/clean
 maplin_arm/clean: maplin_arm/CMakeFiles/maplin_arm_generate_messages_eus.dir/clean
@@ -443,7 +444,7 @@ maplin_arm/CMakeFiles/maplin_arm_genpy.dir/all: maplin_arm/CMakeFiles/maplin_arm
 
 # Build rule for subdir invocation for target.
 maplin_arm/CMakeFiles/maplin_arm_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 maplin_arm/CMakeFiles/maplin_arm_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 0
 .PHONY : maplin_arm/CMakeFiles/maplin_arm_genpy.dir/rule
@@ -475,7 +476,7 @@ maplin_arm/CMakeFiles/maplin_arm_gennodejs.dir/all: maplin_arm/CMakeFiles/maplin
 
 # Build rule for subdir invocation for target.
 maplin_arm/CMakeFiles/maplin_arm_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 maplin_arm/CMakeFiles/maplin_arm_gennodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 0
 .PHONY : maplin_arm/CMakeFiles/maplin_arm_gennodejs.dir/rule
@@ -502,14 +503,15 @@ clean: maplin_arm/CMakeFiles/maplin_arm_gennodejs.dir/clean
 maplin_arm/CMakeFiles/maplin_arm_generate_messages_lisp.dir/all: maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_SetMotorStates.dir/all
 maplin_arm/CMakeFiles/maplin_arm_generate_messages_lisp.dir/all: maplin_arm/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 maplin_arm/CMakeFiles/maplin_arm_generate_messages_lisp.dir/all: maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MotorState.dir/all
+maplin_arm/CMakeFiles/maplin_arm_generate_messages_lisp.dir/all: maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir/all
 	$(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_generate_messages_lisp.dir/build.make maplin_arm/CMakeFiles/maplin_arm_generate_messages_lisp.dir/depend
 	$(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_generate_messages_lisp.dir/build.make maplin_arm/CMakeFiles/maplin_arm_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/roshenac/Desktop/makeitmove/build/CMakeFiles --progress-num=17,18 "Built target maplin_arm_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/roshenac/Desktop/makeitmove/build/CMakeFiles --progress-num=19,20,21 "Built target maplin_arm_generate_messages_lisp"
 .PHONY : maplin_arm/CMakeFiles/maplin_arm_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 maplin_arm/CMakeFiles/maplin_arm_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 maplin_arm/CMakeFiles/maplin_arm_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 0
 .PHONY : maplin_arm/CMakeFiles/maplin_arm_generate_messages_lisp.dir/rule
@@ -526,6 +528,73 @@ maplin_arm/CMakeFiles/maplin_arm_generate_messages_lisp.dir/clean:
 
 # clean rule for target.
 clean: maplin_arm/CMakeFiles/maplin_arm_generate_messages_lisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir
+
+# All Build rule for target.
+maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/all: maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_SetMotorStates.dir/all
+maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/all: maplin_arm/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/all: maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MotorState.dir/all
+maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/all: maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir/all
+	$(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/build.make maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/depend
+	$(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/build.make maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/roshenac/Desktop/makeitmove/build/CMakeFiles --progress-num=22,23,24 "Built target maplin_arm_generate_messages_nodejs"
+.PHONY : maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 0
+.PHONY : maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+maplin_arm_generate_messages_nodejs: maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/rule
+
+.PHONY : maplin_arm_generate_messages_nodejs
+
+# clean rule for target.
+maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/build.make maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/clean
+.PHONY : maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/clean
+
+# clean rule for target.
+clean: maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target maplin_arm/CMakeFiles/maplin_arm_geneus.dir
+
+# All Build rule for target.
+maplin_arm/CMakeFiles/maplin_arm_geneus.dir/all: maplin_arm/CMakeFiles/maplin_arm_generate_messages_eus.dir/all
+	$(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_geneus.dir/build.make maplin_arm/CMakeFiles/maplin_arm_geneus.dir/depend
+	$(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_geneus.dir/build.make maplin_arm/CMakeFiles/maplin_arm_geneus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/roshenac/Desktop/makeitmove/build/CMakeFiles --progress-num= "Built target maplin_arm_geneus"
+.PHONY : maplin_arm/CMakeFiles/maplin_arm_geneus.dir/all
+
+# Build rule for subdir invocation for target.
+maplin_arm/CMakeFiles/maplin_arm_geneus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 maplin_arm/CMakeFiles/maplin_arm_geneus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 0
+.PHONY : maplin_arm/CMakeFiles/maplin_arm_geneus.dir/rule
+
+# Convenience name for target.
+maplin_arm_geneus: maplin_arm/CMakeFiles/maplin_arm_geneus.dir/rule
+
+.PHONY : maplin_arm_geneus
+
+# clean rule for target.
+maplin_arm/CMakeFiles/maplin_arm_geneus.dir/clean:
+	$(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_geneus.dir/build.make maplin_arm/CMakeFiles/maplin_arm_geneus.dir/clean
+.PHONY : maplin_arm/CMakeFiles/maplin_arm_geneus.dir/clean
+
+# clean rule for target.
+clean: maplin_arm/CMakeFiles/maplin_arm_geneus.dir/clean
 
 .PHONY : clean
 
@@ -568,14 +637,15 @@ clean: maplin_arm/CMakeFiles/roscpp_generate_messages_py.dir/clean
 maplin_arm/CMakeFiles/maplin_arm_generate_messages_py.dir/all: maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_SetMotorStates.dir/all
 maplin_arm/CMakeFiles/maplin_arm_generate_messages_py.dir/all: maplin_arm/CMakeFiles/std_msgs_generate_messages_py.dir/all
 maplin_arm/CMakeFiles/maplin_arm_generate_messages_py.dir/all: maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MotorState.dir/all
+maplin_arm/CMakeFiles/maplin_arm_generate_messages_py.dir/all: maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir/all
 	$(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_generate_messages_py.dir/build.make maplin_arm/CMakeFiles/maplin_arm_generate_messages_py.dir/depend
 	$(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_generate_messages_py.dir/build.make maplin_arm/CMakeFiles/maplin_arm_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/roshenac/Desktop/makeitmove/build/CMakeFiles --progress-num=21,22,23 "Built target maplin_arm_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/roshenac/Desktop/makeitmove/build/CMakeFiles --progress-num=25,26,27,28 "Built target maplin_arm_generate_messages_py"
 .PHONY : maplin_arm/CMakeFiles/maplin_arm_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 maplin_arm/CMakeFiles/maplin_arm_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 maplin_arm/CMakeFiles/maplin_arm_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 0
 .PHONY : maplin_arm/CMakeFiles/maplin_arm_generate_messages_py.dir/rule
@@ -607,7 +677,7 @@ maplin_arm/CMakeFiles/maplin_arm_genlisp.dir/all: maplin_arm/CMakeFiles/maplin_a
 
 # Build rule for subdir invocation for target.
 maplin_arm/CMakeFiles/maplin_arm_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 maplin_arm/CMakeFiles/maplin_arm_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 0
 .PHONY : maplin_arm/CMakeFiles/maplin_arm_genlisp.dir/rule
@@ -856,8 +926,8 @@ clean: maplin_arm/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 
 # All Build rule for target.
 maplin_arm/CMakeFiles/maplin_arm_generate_messages.dir/all: maplin_arm/CMakeFiles/maplin_arm_generate_messages_lisp.dir/all
-maplin_arm/CMakeFiles/maplin_arm_generate_messages.dir/all: maplin_arm/CMakeFiles/maplin_arm_generate_messages_py.dir/all
 maplin_arm/CMakeFiles/maplin_arm_generate_messages.dir/all: maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/all
+maplin_arm/CMakeFiles/maplin_arm_generate_messages.dir/all: maplin_arm/CMakeFiles/maplin_arm_generate_messages_py.dir/all
 maplin_arm/CMakeFiles/maplin_arm_generate_messages.dir/all: maplin_arm/CMakeFiles/maplin_arm_generate_messages_cpp.dir/all
 maplin_arm/CMakeFiles/maplin_arm_generate_messages.dir/all: maplin_arm/CMakeFiles/maplin_arm_generate_messages_eus.dir/all
 	$(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_generate_messages.dir/build.make maplin_arm/CMakeFiles/maplin_arm_generate_messages.dir/depend
@@ -872,7 +942,7 @@ all: maplin_arm/CMakeFiles/maplin_arm_generate_messages.dir/all
 
 # Build rule for subdir invocation for target.
 maplin_arm/CMakeFiles/maplin_arm_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 maplin_arm/CMakeFiles/maplin_arm_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 0
 .PHONY : maplin_arm/CMakeFiles/maplin_arm_generate_messages.dir/rule
@@ -1117,72 +1187,6 @@ clean: maplin_arm/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir
-
-# All Build rule for target.
-maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/all: maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_SetMotorStates.dir/all
-maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/all: maplin_arm/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/all: maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MotorState.dir/all
-	$(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/build.make maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/depend
-	$(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/build.make maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/roshenac/Desktop/makeitmove/build/CMakeFiles --progress-num=19,20 "Built target maplin_arm_generate_messages_nodejs"
-.PHONY : maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/all
-
-# Build rule for subdir invocation for target.
-maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 0
-.PHONY : maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-maplin_arm_generate_messages_nodejs: maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/rule
-
-.PHONY : maplin_arm_generate_messages_nodejs
-
-# clean rule for target.
-maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/build.make maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/clean
-.PHONY : maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/clean
-
-# clean rule for target.
-clean: maplin_arm/CMakeFiles/maplin_arm_generate_messages_nodejs.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target maplin_arm/CMakeFiles/maplin_arm_geneus.dir
-
-# All Build rule for target.
-maplin_arm/CMakeFiles/maplin_arm_geneus.dir/all: maplin_arm/CMakeFiles/maplin_arm_generate_messages_eus.dir/all
-	$(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_geneus.dir/build.make maplin_arm/CMakeFiles/maplin_arm_geneus.dir/depend
-	$(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_geneus.dir/build.make maplin_arm/CMakeFiles/maplin_arm_geneus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/roshenac/Desktop/makeitmove/build/CMakeFiles --progress-num= "Built target maplin_arm_geneus"
-.PHONY : maplin_arm/CMakeFiles/maplin_arm_geneus.dir/all
-
-# Build rule for subdir invocation for target.
-maplin_arm/CMakeFiles/maplin_arm_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 maplin_arm/CMakeFiles/maplin_arm_geneus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 0
-.PHONY : maplin_arm/CMakeFiles/maplin_arm_geneus.dir/rule
-
-# Convenience name for target.
-maplin_arm_geneus: maplin_arm/CMakeFiles/maplin_arm_geneus.dir/rule
-
-.PHONY : maplin_arm_geneus
-
-# clean rule for target.
-maplin_arm/CMakeFiles/maplin_arm_geneus.dir/clean:
-	$(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_geneus.dir/build.make maplin_arm/CMakeFiles/maplin_arm_geneus.dir/clean
-.PHONY : maplin_arm/CMakeFiles/maplin_arm_geneus.dir/clean
-
-# clean rule for target.
-clean: maplin_arm/CMakeFiles/maplin_arm_geneus.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target maplin_arm/CMakeFiles/std_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
@@ -1247,6 +1251,38 @@ clean: maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MotorState
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir
+
+# All Build rule for target.
+maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir/all:
+	$(MAKE) -f maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir/build.make maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir/depend
+	$(MAKE) -f maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir/build.make maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/roshenac/Desktop/makeitmove/build/CMakeFiles --progress-num= "Built target _maplin_arm_generate_messages_check_deps_MoveJoint"
+.PHONY : maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir/all
+
+# Build rule for subdir invocation for target.
+maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 0
+.PHONY : maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir/rule
+
+# Convenience name for target.
+_maplin_arm_generate_messages_check_deps_MoveJoint: maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir/rule
+
+.PHONY : _maplin_arm_generate_messages_check_deps_MoveJoint
+
+# clean rule for target.
+maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir/clean:
+	$(MAKE) -f maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir/build.make maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir/clean
+.PHONY : maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir/clean
+
+# clean rule for target.
+clean: maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target maplin_arm/CMakeFiles/maplin_arm_gencpp.dir
 
 # All Build rule for target.
@@ -1258,7 +1294,7 @@ maplin_arm/CMakeFiles/maplin_arm_gencpp.dir/all: maplin_arm/CMakeFiles/maplin_ar
 
 # Build rule for subdir invocation for target.
 maplin_arm/CMakeFiles/maplin_arm_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 maplin_arm/CMakeFiles/maplin_arm_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 0
 .PHONY : maplin_arm/CMakeFiles/maplin_arm_gencpp.dir/rule
@@ -1285,14 +1321,15 @@ clean: maplin_arm/CMakeFiles/maplin_arm_gencpp.dir/clean
 maplin_arm/CMakeFiles/maplin_arm_generate_messages_cpp.dir/all: maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_SetMotorStates.dir/all
 maplin_arm/CMakeFiles/maplin_arm_generate_messages_cpp.dir/all: maplin_arm/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 maplin_arm/CMakeFiles/maplin_arm_generate_messages_cpp.dir/all: maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MotorState.dir/all
+maplin_arm/CMakeFiles/maplin_arm_generate_messages_cpp.dir/all: maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir/all
 	$(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_generate_messages_cpp.dir/build.make maplin_arm/CMakeFiles/maplin_arm_generate_messages_cpp.dir/depend
 	$(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_generate_messages_cpp.dir/build.make maplin_arm/CMakeFiles/maplin_arm_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/roshenac/Desktop/makeitmove/build/CMakeFiles --progress-num=12,13 "Built target maplin_arm_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/roshenac/Desktop/makeitmove/build/CMakeFiles --progress-num=12,13,14 "Built target maplin_arm_generate_messages_cpp"
 .PHONY : maplin_arm/CMakeFiles/maplin_arm_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 maplin_arm/CMakeFiles/maplin_arm_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 maplin_arm/CMakeFiles/maplin_arm_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 0
 .PHONY : maplin_arm/CMakeFiles/maplin_arm_generate_messages_cpp.dir/rule
@@ -1319,14 +1356,15 @@ clean: maplin_arm/CMakeFiles/maplin_arm_generate_messages_cpp.dir/clean
 maplin_arm/CMakeFiles/maplin_arm_generate_messages_eus.dir/all: maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_SetMotorStates.dir/all
 maplin_arm/CMakeFiles/maplin_arm_generate_messages_eus.dir/all: maplin_arm/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 maplin_arm/CMakeFiles/maplin_arm_generate_messages_eus.dir/all: maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MotorState.dir/all
+maplin_arm/CMakeFiles/maplin_arm_generate_messages_eus.dir/all: maplin_arm/CMakeFiles/_maplin_arm_generate_messages_check_deps_MoveJoint.dir/all
 	$(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_generate_messages_eus.dir/build.make maplin_arm/CMakeFiles/maplin_arm_generate_messages_eus.dir/depend
 	$(MAKE) -f maplin_arm/CMakeFiles/maplin_arm_generate_messages_eus.dir/build.make maplin_arm/CMakeFiles/maplin_arm_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/roshenac/Desktop/makeitmove/build/CMakeFiles --progress-num=14,15,16 "Built target maplin_arm_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/roshenac/Desktop/makeitmove/build/CMakeFiles --progress-num=15,16,17,18 "Built target maplin_arm_generate_messages_eus"
 .PHONY : maplin_arm/CMakeFiles/maplin_arm_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 maplin_arm/CMakeFiles/maplin_arm_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 maplin_arm/CMakeFiles/maplin_arm_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/roshenac/Desktop/makeitmove/build/CMakeFiles 0
 .PHONY : maplin_arm/CMakeFiles/maplin_arm_generate_messages_eus.dir/rule

@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/maplin_arm_generate_messages_nodejs"
   "/home/roshenac/Desktop/makeitmove/devel/share/gennodejs/ros/maplin_arm/msg/MotorState.js"
   "/home/roshenac/Desktop/makeitmove/devel/share/gennodejs/ros/maplin_arm/msg/SetMotorStates.js"
+  "/home/roshenac/Desktop/makeitmove/devel/share/gennodejs/ros/maplin_arm/msg/MoveJoint.js"
 )
 
 # Per-language clean rules from dependency scanning.

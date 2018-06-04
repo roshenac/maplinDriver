@@ -3,6 +3,8 @@
   (:export
    "<MOTORSTATE>"
    "MOTORSTATE"
+   "<MOVEJOINT>"
+   "MOVEJOINT"
    "<SETMOTORSTATES>"
    "SETMOTORSTATES"
   ))

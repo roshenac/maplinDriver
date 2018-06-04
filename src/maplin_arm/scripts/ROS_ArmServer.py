@@ -19,7 +19,7 @@ class ArmServer():
       # name for our 'listener' node so that multiple listeners can
       # run simultaneously.
       rospy.init_node( 'listener', anonymous=True )
-      self.armDriver = ArmDriver()
+    #   self.armDriver = ArmDriver()
 
       rospy.Subscriber('setArmMotorStates', SetMotorStates, self.setArmMotorStatesCallback)
 
@@ -31,13 +31,13 @@ class ArmServer():
 
     #---------------------------------------------------------------------------
   def update( self ):
-      self.armDriver.update()
+    #   self.armDriver.update()
             
     #---------------------------------------------------------------------------
   def setArmMotorStatesCallback(self ,request ):  
       for stateRequest in request.motorStates:
           if stateRequest.motorIdx >= 0 and stateRequest.motorIdx < ArmDriver.NUM_MOTORS:
-              self.armDriver.setMotorState( stateRequest.motorIdx, stateRequest.motorState )
+            #   self.armDriver.setMotorState( stateRequest.motorIdx, stateRequest.motorState )
               self.update() 
           else:
               rospy.logerr( "Command sent to invalid motorIdx ({0})".format( stateRequest.motorIdx ) )

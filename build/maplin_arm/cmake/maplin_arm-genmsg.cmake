@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "maplin_arm: 2 messages, 0 services")
+message(STATUS "maplin_arm: 3 messages, 0 services")
 
 set(MSG_I_FLAGS "-Imaplin_arm:/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
 
@@ -27,6 +27,11 @@ add_custom_target(_maplin_arm_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "maplin_arm" "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/SetMotorStates.msg" "maplin_arm/MotorState:std_msgs/Header"
 )
 
+get_filename_component(_filename "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MoveJoint.msg" NAME_WE)
+add_custom_target(_maplin_arm_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "maplin_arm" "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MoveJoint.msg" ""
+)
+
 #
 #  langs = gencpp;geneus;genlisp;gennodejs;genpy
 #
@@ -43,6 +48,12 @@ _generate_msg_cpp(maplin_arm
   "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/SetMotorStates.msg"
   "${MSG_I_FLAGS}"
   "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MotorState.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/maplin_arm
+)
+_generate_msg_cpp(maplin_arm
+  "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MoveJoint.msg"
+  "${MSG_I_FLAGS}"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/maplin_arm
 )
 
@@ -63,6 +74,8 @@ add_dependencies(maplin_arm_generate_messages maplin_arm_generate_messages_cpp)
 get_filename_component(_filename "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MotorState.msg" NAME_WE)
 add_dependencies(maplin_arm_generate_messages_cpp _maplin_arm_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/SetMotorStates.msg" NAME_WE)
+add_dependencies(maplin_arm_generate_messages_cpp _maplin_arm_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MoveJoint.msg" NAME_WE)
 add_dependencies(maplin_arm_generate_messages_cpp _maplin_arm_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -86,6 +99,12 @@ _generate_msg_eus(maplin_arm
   "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MotorState.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/maplin_arm
 )
+_generate_msg_eus(maplin_arm
+  "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MoveJoint.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/maplin_arm
+)
 
 ### Generating Services
 
@@ -104,6 +123,8 @@ add_dependencies(maplin_arm_generate_messages maplin_arm_generate_messages_eus)
 get_filename_component(_filename "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MotorState.msg" NAME_WE)
 add_dependencies(maplin_arm_generate_messages_eus _maplin_arm_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/SetMotorStates.msg" NAME_WE)
+add_dependencies(maplin_arm_generate_messages_eus _maplin_arm_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MoveJoint.msg" NAME_WE)
 add_dependencies(maplin_arm_generate_messages_eus _maplin_arm_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -127,6 +148,12 @@ _generate_msg_lisp(maplin_arm
   "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MotorState.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/maplin_arm
 )
+_generate_msg_lisp(maplin_arm
+  "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MoveJoint.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/maplin_arm
+)
 
 ### Generating Services
 
@@ -145,6 +172,8 @@ add_dependencies(maplin_arm_generate_messages maplin_arm_generate_messages_lisp)
 get_filename_component(_filename "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MotorState.msg" NAME_WE)
 add_dependencies(maplin_arm_generate_messages_lisp _maplin_arm_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/SetMotorStates.msg" NAME_WE)
+add_dependencies(maplin_arm_generate_messages_lisp _maplin_arm_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MoveJoint.msg" NAME_WE)
 add_dependencies(maplin_arm_generate_messages_lisp _maplin_arm_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -168,6 +197,12 @@ _generate_msg_nodejs(maplin_arm
   "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MotorState.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/maplin_arm
 )
+_generate_msg_nodejs(maplin_arm
+  "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MoveJoint.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/maplin_arm
+)
 
 ### Generating Services
 
@@ -186,6 +221,8 @@ add_dependencies(maplin_arm_generate_messages maplin_arm_generate_messages_nodej
 get_filename_component(_filename "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MotorState.msg" NAME_WE)
 add_dependencies(maplin_arm_generate_messages_nodejs _maplin_arm_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/SetMotorStates.msg" NAME_WE)
+add_dependencies(maplin_arm_generate_messages_nodejs _maplin_arm_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MoveJoint.msg" NAME_WE)
 add_dependencies(maplin_arm_generate_messages_nodejs _maplin_arm_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -209,6 +246,12 @@ _generate_msg_py(maplin_arm
   "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MotorState.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/maplin_arm
 )
+_generate_msg_py(maplin_arm
+  "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MoveJoint.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/maplin_arm
+)
 
 ### Generating Services
 
@@ -227,6 +270,8 @@ add_dependencies(maplin_arm_generate_messages maplin_arm_generate_messages_py)
 get_filename_component(_filename "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MotorState.msg" NAME_WE)
 add_dependencies(maplin_arm_generate_messages_py _maplin_arm_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/SetMotorStates.msg" NAME_WE)
+add_dependencies(maplin_arm_generate_messages_py _maplin_arm_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/roshenac/Desktop/makeitmove/src/maplin_arm/msg/MoveJoint.msg" NAME_WE)
 add_dependencies(maplin_arm_generate_messages_py _maplin_arm_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

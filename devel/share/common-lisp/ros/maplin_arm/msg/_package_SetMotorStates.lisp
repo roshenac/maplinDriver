@@ -3,6 +3,4 @@
           HEADER
           MOTORSTATES-VAL
           MOTORSTATES
-          COMMAND-VAL
-          COMMAND
 ))
